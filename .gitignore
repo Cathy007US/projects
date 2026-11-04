@@ -1,0 +1,32 @@
+# 依赖
+node_modules/
+
+# 构建产物（部署时单独打包上传，不进仓库）
+dist/
+
+# 日志
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 环境变量 / 密钥
+.env
+.env.*
+!.env.example
+
+# 临时文件
+*.tmp
+*.bak
+
+# 本地工具数据
+.workbuddy/
