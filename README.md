@@ -62,7 +62,7 @@ python3 -m http.server 4173
 1. `npm run build`
 2. Upload the contents of `dist/` to the server, e.g.:
    ```bash
-   rsync -avz --delete dist/ ubuntu@<server>:/home/ubuntu/projects/
+   rsync -avz --delete dist/ root@<server>:/root/website
    ```
 3. Nginx serves it as a static site (`try_files $uri $uri/ /index.html`).
 
@@ -147,7 +147,7 @@ python3 -m http.server 4173
 1. `npm run build`
 2. 上传 `dist/` 内容到服务器：
    ```bash
-   rsync -avz --delete dist/ ubuntu@<服务器>:/home/ubuntu/projects/
+   rsync -avz --delete dist/ root@<服务器>:/root/website
    ```
 3. Nginx 以静态站点方式托管（`try_files $uri $uri/ /index.html`）。
 
